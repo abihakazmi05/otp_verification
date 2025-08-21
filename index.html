@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔲 Outer Gradient Border -->
+  <div class="gradient-border">
+    <div class="page-wrapper">
+
+      <!-- 🔘 Top Header with Colored Dots and Gray Strip -->
+      <div class="header-wrapper">
+        <div class="top-bar">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="inner-gray-strip"></div>
+        </div>
+      </div>
+
+      <!-- 📩 OTP Verification Card -->
+      <div class="container">
+        <h2>Verify your email address</h2>
+        <p class="instruction">
+          A four-digit code has been sent to your email <strong>abc@xyz.com</strong>.<br />
+          Enter the code below to verify.
+        </p>
+
+        <form id="otp-form">
+          <div class="otp-inputs">
+            <input type="text" maxlength="1" class="otp-input" />
+            <input type="text" maxlength="1" class="otp-input" />
+            <input type="text" maxlength="1" class="otp-input" />
+            <input type="text" maxlength="1" class="otp-input" />
+          </div>
+          <button type="submit">Verify OTP</button>
+          <p id="success-message" class="success-message"></p>
+          <p id="error-message" class="error-message"></p>
+        </form>
+      </div>
+
+    </div> <!-- End: page-wrapper -->
+  </div> <!-- End: gradient-border -->
+
+  <script src="script.js"></script>
+</body>
+</html>
